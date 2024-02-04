@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Todo Page">
+    <meta name="keywords" content="Todo Page, Online To-Do List">
+    <meta name="author" content="The Special Ones">
+    <title>Todo Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/todostyle.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div id="branding">
+                <h1>Online To-Do List</h1>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="current"><a href="todo.html">To-Do</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="container">
+                <p id="addone">
+                    <label for="new-task">Add Item</label> 
+                    <input id="new-task" type="text">
+                    <div style="display: flex; justify-content: center;">
+                        <button class="adder">Add</button>
+                      </div>
+                
+                </p>
+
+                <h3>To-Do</h3>
+                <ul id="incomplete-tasks">
+                    <li>
+                        <input type="checkbox">
+                        <label>Win HackStreet 2.0</label>
+                        <input type="text">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label>Enjoy and Learn</label>
+                        <input type="text">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </li>
+                </ul>
+
+                <h3>Completed</h3>
+                <ul id="completed-tasks">
+                    <li>
+                        <input type="checkbox" checked>
+                        <label>Make our submission</label>
+                        <input type="text">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <p>The Special Ones &copy; 2024</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
